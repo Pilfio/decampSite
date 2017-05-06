@@ -92,7 +92,7 @@ class FGMembersite
         
         if(!$this->SendUserConfirmationEmail($formvars))
         {
-            return false;
+            return true;
         }
 
         $this->SendAdminIntimationEmail($formvars);

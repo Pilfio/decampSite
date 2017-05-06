@@ -3,7 +3,7 @@ require_once("./include/membersite_config.php");
 
 if(isset($_POST['submitted']) && (!isset($_POST['findBot']) && (isset($_POST['Bot']))))
 {
-	$fgmembersite->RedirectToURL("thank-you.html");
+	
    if($fgmembersite->RegisterUser())
    {
         $fgmembersite->RedirectToURL("thank-you.html");
